@@ -1,0 +1,11 @@
+.episode{
+    width: 100%;
+}
+.episode button{
+    margin-top: 0px;
+    width: 200px;
+    margin-left: 12px;
+}
+.episode p{
+    color: var(--purplr-grey);
+}

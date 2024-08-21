@@ -1,13 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+  --theme: #20062e;
+  --blue: #18b2de;
+  --white: #fff;
+  --purple: #d7d7d7;
+  --purplr-grey: #8f8297;
+  --grey: #8EA6BB;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--theme);
+  color: var(--white);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input{
+  font-size: "Inter", sans-serif;
+}
+
+.wrapper-input {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.wrapper-input h1{
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 400;
+  
+}
+
+.wrapper-input p{
+  opacity: 0.5;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.wrapper-input p:hover{
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.all-podcasts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.podcast-title{
+  text-align: left !important;
+  width: 100%;
+}
+
+.banner-wrapper{
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(
+        177.7deg,
+        rgba(58, 129, 191, 0.3) 1.63%,
+        rgba(65, 48, 90, 0.009) 148.18%
+        );
+    padding: 7px;
+    border-radius: 15px;
+}
+.banner-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  border-radius: 20px !important;
+}
+
+.podcast-description{
+  color: var(--purplr-grey);
+  opacity: 1 !important;
+  text-align: left;
+}
+
+.wrapper-input-1{
+  width: 80vw;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  /* margin: auto;
+  margin-top: 30px; */
+}
+
+.user-info{
+  width: 50%;
+  margin: auto;
 }
